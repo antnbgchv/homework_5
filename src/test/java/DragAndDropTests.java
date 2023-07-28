@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class HerokuappDragAndDrop {
+public class DragAndDropTests {
 
     @BeforeAll
     static void config() {
