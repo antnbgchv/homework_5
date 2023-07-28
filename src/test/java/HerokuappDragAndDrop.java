@@ -22,6 +22,7 @@ public class HerokuappDragAndDrop {
         $("#column-a").dragAndDrop(DragAndDropOptions.to("#column-b"));
         $("#column-a").shouldHave(Condition.text("B"));
         $("#column-b").shouldHave(Condition.text("A"));
+        //i added closeWebDriver because after the first test the browser did not close and the test was incorrect
         Selenide.closeWebDriver();
     }
 
