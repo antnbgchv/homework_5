@@ -1,20 +1,10 @@
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class GithubMainPageTest {
-
-    @BeforeAll
-    static void config() {
-        //configParams
-        Configuration.browserSize = "1920x1080";
-        Configuration.pageLoadStrategy = "eager";
-    }
-
+public class GithubMainPageTest extends BaseParams {
     @Test
     void githubEnterpriseTest() {
         open("https://github.com/");
